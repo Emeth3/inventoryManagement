@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory Application</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="/static/css/pico.lime.css">
+    <link rel="stylesheet" href="/static/css/site.css">
+    <script src="/static/js/htmx-2.0.3.js"></script>
+</head>
+<body>
+<header class="container center">
+<!--    <h1><img style="height: 500px; margin-top: -125px" src="/static/img/inventoryManagement2.svg"></h1>-->
+    <svg viewBox="0 0 600 75" width="1000" height="150">
+      <style>
+        .inventory-text {
+          font-family: Arial, sans-serif;
+          font-size: 24px;
+          fill: #a3a5a8;
+        }
+      </style>
+      <text class="inventory-text" x="300" y="25" text-anchor="middle">
+        Inventory
+        <tspan x="300" dy="1em">Management</tspan>
+      </text>
+    </svg>
+</header>
+<main class="container">
+    {% block content %}{% endblock %}
+</main>
+<footer><a href="https://www.flaticon.com/free-icons/coffee" title="coffee icons">Coffee icons created by Freepik - Flaticon</a></footer>
+</body>
+</html>
